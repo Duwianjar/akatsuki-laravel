@@ -1,0 +1,7 @@
+body {
+    background-image: url("../img/sekolah.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* Opsional, membuat gambar latar belakang tetap saat menggulir halaman */
+}

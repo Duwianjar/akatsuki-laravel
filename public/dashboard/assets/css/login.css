@@ -1,0 +1,547 @@
+html,
+body {
+    height: 100%;
+}
+
+.global-container {
+    height: 100%;
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #37517e;
+}
+
+.login-form {
+    width: 380px;
+    height: 500px;
+    padding: 20px;
+    padding-top: 30px;
+    background-color: gainsboro !important;
+    border-radius: 10px !important;
+}
+
+input[type="text"],
+input[type="password"] {
+    background: gainsboro;
+    border: 2px solid #37517e;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border: none;
+    background: gainsboro;
+    color: #fff;
+    margin: 0;
+}
+
+.border-biru {
+    border-color: #0455e1;
+}
+
+.card-tittle {
+    font-weight: 900px;
+    padding-top: 20px;
+}
+
+.btn {
+    background: #37517e !important;
+    color: #fff;
+    transform: translateY(10px);
+    transform: translateX(10px);
+    font-size: 14px;
+    border-radius: 10px !important;
+}
+
+#footer {
+    font-size: 14px;
+    background: #37517e;
+}
+
+#footer .footer-newsletter {
+    margin-top: 20px;
+    padding: 0;
+    text-align: center;
+    font-size: 15px;
+    color: #444444;
+}
+
+#footer .footer-newsletter h4 {
+    font-size: 24px;
+    margin: 0 0 20px 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 600;
+    color: #162b4f;
+}
+
+#footer .footer-newsletter form {
+    margin-top: 30px;
+    background: #fff;
+    padding: 3px 8px;
+    position: relative;
+    border-radius: 50px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.06);
+    text-align: left;
+}
+
+#footer .footer-newsletter form input[type="email"] {
+    border: 0;
+    padding: 4px 8px;
+    width: calc(100% - 100px);
+}
+
+#footer .footer-newsletter form input[type="submit"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border: 0;
+    background: none;
+    font-size: 16px;
+    padding: 0 20px;
+    background: #47b2e4;
+    color: #fff;
+    transition: 0.3s;
+    border-radius: 50px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#footer .footer-newsletter form input[type="submit"]:hover {
+    background: #209dd8;
+}
+
+#footer .footer-top {
+    padding: 60px 0 30px 0;
+    background: #fff;
+}
+
+#footer .footer-top .footer-contact {
+    margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-contact h3 {
+    font-size: 28px;
+    margin: 0 0 10px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #37517e;
+}
+
+#footer .footer-top .footer-contact p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    font-family: "Jost", sans-serif;
+    color: #5e5e5e;
+}
+
+#footer .footer-top h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #37517e;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+#footer .footer-top .footer-links {
+    margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#footer .footer-top .footer-links ul i {
+    padding-right: 2px;
+    color: #47b2e4;
+    font-size: 18px;
+    line-height: 1;
+}
+
+#footer .footer-top .footer-links ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+#footer .footer-top .footer-links ul li:first-child {
+    padding-top: 0;
+}
+
+#footer .footer-top .footer-links ul a {
+    color: #777777;
+    transition: 0.3s;
+    display: inline-block;
+    line-height: 1;
+}
+
+#footer .footer-top .footer-links ul a:hover {
+    text-decoration: none;
+    color: #47b2e4;
+}
+
+#footer .footer-top .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #47b2e4;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+}
+
+#footer .footer-top .social-links a:hover {
+    background: #209dd8;
+    color: #fff;
+    text-decoration: none;
+}
+
+#footer .footer-bottom {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #fff;
+}
+
+#footer .copyright {
+    float: left;
+}
+
+#footer .credits {
+    float: right;
+    font-size: 13px;
+}
+
+#footer .credits a {
+    transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+    #footer .footer-bottom {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        box-sizing: border-box;
+    }
+    #footer .copyright,
+    #footer .credits {
+        text-align: center;
+        float: none;
+    }
+    #footer .credits {
+        padding-top: 4px;
+    }
+}
+
+.btn-detail-matkul {
+    width: 100%;
+    color: #9e9d9d;
+    margin: 10px 0px 20px 0px;
+    background-color: #007bff;
+    color: #f4f4f4;
+    font-weight: bold;
+    padding: 3px;
+    font-size: 13px;
+    border-color: transparent;
+    border-radius: 5px;
+    transition: transform 0.5s ease;
+}
+
+.btn-detail-matkul:hover {
+    transform: translateY(-3px) scale(1.1);
+}
+
+.garis-abu {
+    border-top: 1px solid #343434;
+    /* Warna garis abu-abu */
+    margin-top: -5px;
+    margin-bottom: 10px;
+    /* Jarak atas garis dari elemen sebelumnya */
+}
+
+.ruangan,
+.pengajar {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.mb-99 {
+    margin-bottom: 309px;
+}
+
+.tampilkanpilihan {
+    background-color: #007bff;
+    border-color: transparent;
+    border-radius: 5px;
+    transition: transform 0.5s ease;
+    color: #f4f4f4;
+    font-weight: bold;
+    padding: 5px;
+    font-size: 13px;
+}
+
+.tampilkanpilihan:hover {
+    transform: translateY(-3px) scale(1.1);
+}
+
+@media (max-width: 450px) {
+    .tampilkanpilihan {
+        width: 97%;
+    }
+}
+
+@media (max-width: 300px) {
+    #pilihan {
+        width: 97%;
+    }
+}
+
+.bg-primary-gradasi {
+    background: linear-gradient(to bottom, #007bff, #01284d);
+    /* Ganti warna latar belakang sesuai dengan warna yang Anda inginkan */
+    color: white;
+    /* Ganti warna teks jika diperlukan */
+}
+
+.table-rounded {
+    border-radius: 20px !important;
+    /* Sesuaikan angka ini sesuai dengan tingkat sudut yang Anda inginkan */
+}
+
+.thead-rounded {
+    border-radius: 20px 20px 0 0 !important;
+    /* Mengatur sudut atas saja */
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table,
+thead,
+th,
+td {
+    border: 1px solid transparant;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+}
+
+thead {
+    background: linear-gradient(to bottom, #007bff, #024389);
+    /* Warna latar belakang header */
+    color: white;
+    /* Warna teks header */
+    border-radius: 10px;
+    /* Lengkungkan sudut header */
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+    /* Warna latar belakang baris-genap */
+}
+
+table tr.abu:nth-child(odd) {
+    background-color: #bbdbfe;
+    /* Warna latar belakang baris-ganjil */
+}
+
+table tr.abu:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.text-responsive {
+    white-space: pre-wrap;
+    /* Mempertahankan pemisahan kata dan pemotongan tanpa spasi */
+    overflow: hidden;
+    /* Menyembunyikan konten yang melebihi ukuran elemen secara horizontal */
+    word-break: break-all;
+    /* Memotong kata jika tidak cukup lebar */
+}
+
+.kiri {
+    flex: 0 0 30%;
+    margin-left: 10px;
+    color: #9e9d9d;
+    font-weight: bold;
+}
+
+.tengah {
+    flex: 0 0 2%;
+    color: #9e9d9d;
+    font-weight: bold;
+}
+
+.kanan {
+    flex: 0 0 65%;
+}
+
+@media (max-width: 993px) {
+    .kiri {
+        flex: 0 0 33%;
+    }
+    .tengah {
+        flex: 0 0 2%;
+    }
+    .kanan {
+        flex: 0 0 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    .kiri {
+        flex: 0 0 50%;
+        margin-left: 0px;
+    }
+    .tengah {
+        flex: 0 0 2%;
+    }
+    .kanan {
+        flex: 0 0 40%;
+    }
+}
+
+@media (max-width: 500px) {
+    .kiri {
+        flex: 0 0 60%;
+        margin-left: 0px;
+        font-weight: normal;
+    }
+    .tengah {
+        flex: 0 0 2%;
+        font-weight: normal;
+    }
+    .kanan {
+        flex: 0 0 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    .kiri {
+        flex: 0 0 70%;
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 400px) {
+    .kiri {
+        flex: 0 0 85%;
+        margin-left: 0px;
+    }
+}
+
+@media (min-height: 860px) {
+    .detailmapelsection {
+        margin-bottom: 350px !important;
+    }
+    .mapelsection {
+        margin-bottom: 500px !important;
+    }
+}
+
+@media (min-height: 1000px) {
+    .detailmapelsection {
+        margin-bottom: 450px !important;
+    }
+    .mapelsection {
+        margin-bottom: 500px !important;
+    }
+}
+
+@media (min-height: 1100px) {
+    .detailmapelsection {
+        margin-bottom: 450px !important;
+    }
+    .mapelsection {
+        margin-bottom: 600px !important;
+    }
+}
+
+.btn-edit {
+    width: 45%;
+    margin: 5px 0px 5px 0px;
+    background-color: #ff851b;
+    color: #f4f4f4;
+    font-weight: bold;
+    padding: 3px;
+    font-size: 13px;
+    border-color: transparent;
+    border-radius: 5px;
+    transition: transform 0.5s ease;
+}
+
+.btn-edit:hover {
+    transform: translateY(-3px) scale(1.1);
+}
+
+.btn-delete {
+    width: 45%;
+    margin: 5px 0px 5px 0px;
+    background-color: #f00101;
+    color: #f4f4f4;
+    font-weight: bold;
+    padding: 3px;
+    font-size: 13px;
+    border-color: transparent;
+    border-radius: 5px;
+    transition: transform 0.5s ease;
+}
+
+.btn-delete:hover {
+    transform: translateY(-3px) scale(1.1);
+}
+
+.table-responsive {
+    display: block;
+    overflow-x: auto;
+}
+
+.table-responsive table {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1300px) {
+    .table-responsive table {
+        width: 1050px;
+    }
+}
+
+.col-admin {
+    flex: 0 0 auto;
+}
+
+@media (max-width: 768px) {
+    .table-responsive {
+        display: block !important;
+        overflow-x: auto !important;
+    }
+    .table-responsive table {
+        width: 800px;
+    }
+}
+
+.mapelsection {
+    margin-bottom: 150px !important;
+}
+
+.detailmapelsection {
+    margin-bottom: 150px !important;
+}

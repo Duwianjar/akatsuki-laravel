@@ -1,0 +1,427 @@
+.judul-edit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.judul-edit p {
+    margin-top: 15px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    width: 200px;
+}
+
+.judul-edit .namamapel {
+    color: #000000;
+    width: 300px;
+    border-radius: 5px;
+    margin: 0px;
+    border-color: transparent;
+}
+
+.judul-edit .namamapel:focus {
+    border: 5px solid #007bff;
+    color: #000000;
+}
+
+.pil {
+    width: 300px;
+    border-radius: 5px;
+    margin: 0px;
+    border-color: transparent;
+}
+
+.judul-edit .deskripsi {
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+    margin: 0px;
+    border-color: transparent;
+}
+
+.judul-edit textarea:focus {
+    border: 5px solid #007bff !important;
+    color: #000000;
+}
+
+.edit {
+    width: 500px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border-color: transparent;
+    background-color: #007bff;
+    font-weight: bold;
+    color: white;
+    transition: transform 0.5s ease;
+}
+
+.edit:hover {
+    transform: translateY(-3px) scale(1.05);
+}
+
+.garis-abu-edit {
+    border-top: 1px solid #343434;
+    /* Warna garis abu-abu */
+    margin-top: -5px;
+    margin-bottom: 10px;
+    /* Jarak atas garis dari elemen sebelumnya */
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.garis-biru-edit {
+    /* Ketebalan garis horizontal */
+    background-color: #007bff;
+    /* Warna biru */
+    border: 2px solid #007bff;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.mapel-edit {
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+}
+
+@media (max-width: 768px) {
+    .mapel-edit {
+        width: auto;
+    }
+    .judul-edit p {
+        font-size: 16px;
+        width: 160px;
+        margin-left: 10px;
+    }
+    .judul-edit .namamapel {
+        width: 260px;
+        margin-right: 10px;
+    }
+    .pil {
+        width: 260px;
+        margin-right: 10px;
+    }
+    .judul-edit .deskripsi {
+        width: 260px;
+        margin-right: 10px;
+        height: 150px;
+    }
+    .edit {
+        width: 420px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .garis-abu-edit {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .garis-biru-edit {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+@media (max-width: 555px) {
+    .judul-edit p {
+        width: 100px;
+        margin-right: 5px;
+    }
+    .judul-edit .namamapel {
+        width: 200px;
+        margin-left: 5px;
+    }
+    .pil {
+        width: 200px;
+        margin-left: 5px;
+    }
+    .judul-edit .deskripsi {
+        width: 200px;
+        margin-left: 5px;
+    }
+    .edit {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .judul-edit p {
+        width: 70px;
+        margin-left: 0;
+    }
+    .judul-edit .namamapel {
+        width: 100%;
+        margin-right: 0;
+    }
+    .pil {
+        width: 100%;
+        margin-right: 0;
+    }
+    .judul-edit .deskripsi {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .edit {
+        width: 100%;
+    }
+}
+
+@media (max-width: 320px) {
+    .judul-edit p {
+        width: 50px;
+    }
+    .judul-edit .namamapel {
+        width: 100%;
+    }
+    .pil {
+        width: 100%;
+    }
+    .judul-edit .deskripsi {
+        width: 100%;
+    }
+    .edit {
+        width: 100%;
+    }
+}
+
+.tambahmapel {
+    background-color: #006d1f;
+    border-color: transparent;
+    border-radius: 5px;
+    transition: transform 0.5s ease;
+    color: #f4f4f4;
+    font-weight: bold;
+    padding: 5px;
+    font-size: 13px;
+}
+
+.tambahmapel:hover {
+    transform: translateY(-3px) scale(1.1);
+}
+
+.dgr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+
+.is-invalid {
+    border-color: #dc3545 !important;
+    color: #dc3545 !important;
+    /* Warna teks merah */
+}
+
+@keyframes moveBackground {
+    0%,
+    100% {
+        background-position: right bottom;
+    }
+    35% {
+        background-position: left bottom;
+    }
+    70% {
+        background-position: left bottom;
+    }
+}
+
+.btneditprof {
+    background: linear-gradient(to left, #f97603, #f7943e, #efcbab);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color: #f4f4f4;
+    font-weight: bold;
+    padding: 3px;
+    font-size: 15px;
+    border-color: transparent;
+    border-radius: 5px;
+    animation: moveBackground 5s linear infinite;
+    /* 5s adalah durasi animasi */
+}
+
+/* Hentikan animasi saat tombol dihover */
+
+.btneditprof:hover {
+    animation: none;
+}
+
+.judul-edit .inputan-edit {
+    color: #000000;
+    width: 300px;
+    border-radius: 5px;
+    margin: 0px;
+    border-color: transparent;
+    display: flex;
+    flex-direction: column;
+}
+
+.judul-edit .inputan-edit:focus {
+    border: 5px solid #007bff;
+    color: #000000;
+}
+
+@media (max-width: 525px) {
+    .judul-edit {
+        flex-direction: column;
+    }
+    .judul-edit p {
+        width: 100%;
+    }
+    #judul-edit-p {
+        margin-left: 2%;
+        width: 100%;
+    }
+    .inputan-edit {
+        width: 100% !important;
+    }
+}
+
+.garis-abu-edit-profil {
+    border-top: 1px solid #343434;
+    /* Warna garis abu-abu */
+    margin-top: 25px;
+    margin-bottom: 25px;
+    /* Jarak atas garis dari elemen sebelumnya */
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.lpa-pass {
+    margin-top: 10px;
+    margin-right: 90px;
+    text-align: end;
+}
+
+@media (max-width: 1200px) {
+    .lpa-pass {
+        margin-right: 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    .lpa-pass {
+        margin-right: 50px;
+    }
+}
+
+@media (max-width: 769px) {
+    .lpa-pass {
+        margin-right: 90px;
+    }
+}
+
+@media (max-width: 768px) {
+    .lpa-pass {
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 555px) {
+    .lpa-pass {
+        margin-right: 0%;
+    }
+}
+
+.btn-eye {
+    border-radius: 0px 5px 5px 0px;
+    margin-left: 0px;
+    border: 4 solid white;
+    background-color: white;
+}
+
+.judul-edit .inputan-edit-pass {
+    color: #000000;
+    width: 300px;
+    border-radius: 5px 0px 0px 5px;
+    margin: 0px;
+    border-color: transparent;
+    display: flex;
+    flex-direction: column;
+}
+
+.judul-edit .inputan-edit-pass:focus {
+    border: 5px solid #007bff;
+    color: #000000;
+}
+
+.tambah-row {
+    display: flex;
+}
+
+@media (max-width: 525px) {
+    .tambah-row {
+        flex-direction: row;
+        width: 100%;
+    }
+    .inputan-edit-pass {
+        width: 100% !important;
+    }
+}
+
+.square-image {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    margin-bottom: 25px;
+    border: 2px solid #007bff;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.plh-foto {
+    margin-left: auto;
+    width: 300px;
+    margin-right: auto;
+    text-align: center;
+}
+
+@media (max-width: 420px) {
+    .square-image {
+        width: 160px;
+        height: 160px;
+    }
+    .plh-foto {
+        width: 180px;
+    }
+}
+
+.hide {
+    display: none;
+}
+
+.pgnt {
+    margin-top: 15px;
+    margin-left: 12px;
+}
+
+.pgnt nav p {
+    margin-top: 15px;
+}
+
+.pgnt nav .hidden div:nth-child(2) {
+    display: none;
+}
+
+@media (max-width: 450px) {
+    .tampiloption {
+        width: 97%;
+    }
+}
+
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    /* Ganti dengan warna latar belakang yang Anda inginkan */
+    color: #fff;
+    /* Ganti dengan warna teks yang Anda inginkan */
+    text-align: center;
+    padding: 10px 0;
+}
